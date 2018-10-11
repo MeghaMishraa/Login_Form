@@ -1,0 +1,63 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+  <style>
+    .login-div {
+      margin-left: 30%;
+      margin-top: 15%;
+    }
+
+    input {
+      display: block;
+      width: 400px;
+      height: 30px;
+      font-size: 14px;
+
+      border-radius: 5px;
+      border: 1px solid #8a8a8a;
+
+      margin-bottom: 10px;
+
+      padding: 0 10px;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    button {
+      display: block;
+      height: 30px;
+      width: 100px;
+      font-size: 14px;
+      background-color: black;
+      color: white;
+      border-radius: 10px;
+      border: 0;
+      margin-left: 20%;
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+<div class="login-div">
+  <input type="text" id="user" placeholder="Enter your username here">
+  <input type="password" id="password" placeholder="Enter your password here">
+  <button onclick="validate()">Login</button>
+</div>
+</body>
+
+<script>
+    function validate() {
+        const username = document.getElementById('user').value;
+        const password = document.getElementById('password').value;
+
+        if (username === 'architgarg' && password === 'secret') {
+            alert('Login Successfull');
+        } else {
+            alert('Gand marao');
+        }
+    }
+
+</script>
+</html>
+
+
